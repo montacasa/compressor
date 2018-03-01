@@ -1,0 +1,28 @@
+{
+  "name": "compressor",
+  "description": "Node jpg and png compressor",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "engine": {
+    "node": "^9.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "imagemin": "^5.3.1",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.1"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config index.js"
+  },
+  "devDependencies": {
+    "@montacasa/cz-mc": "^0.2.0-rc.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@montacasa/cz-mc"
+    }
+  }
+}
