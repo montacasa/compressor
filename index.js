@@ -13,5 +13,5 @@ imagemin([env.INPUTS], env.OUTPUTS, {
   for (var i = 0, len = files.length; i < len; i++) {
     console.log(files[i].path);
   }
-  console.log('DONE!');
+  console.log(`Done with images in ${env.INPUTS}.`);
 });
