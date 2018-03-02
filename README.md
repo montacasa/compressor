@@ -7,14 +7,14 @@ This is a very simple usage of `imagemin` to compress a batch of images.
 
 - `cp .env.example .env`
 
-- Configure `INPUT` and `OUTPUT` variables in `.env`
+- Configure `INPUTS` and `OUTPUTS` variables in `.env`
 
-- Compress images from `INPUT` to `OUTPUT` diretories with `npm run start`
+- Compress images from `INPUTS` to `OUTPUTS` diretories with `npm run start`
 
 ### Optional
 
-You can override the environment variables in command line, e.g.:
+The environment variables can be overridden in the command line, e.g.:
 
 ```
-INPUTS=input/*.{jpg,png} OUTPUTS=optimized npm run start
+INPUTS=input/*.{jpg,png} OUTPUTS=optimized RECOMPRESS_MAX=60 PNG_QUALITY=65-80 npm run start
 ```
